@@ -1,0 +1,173 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar{
+    background-color: transparent;
+    display: flex;
+    text-decoration: none;
+    height: 60px;
+    position: relative;
+}
+.left{
+  position: absolute;
+  top: 50%;
+  left: 85px;
+  cursor: pointer;
+}
+.right{
+    position: absolute;
+    right: 10px;
+}
+#check{
+    display: none;
+}
+.checkBtn{
+    display: none;
+}
+.list{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+li a{
+    text-decoration: none;
+    margin-right: 10vh;
+    justify-content: space-between;
+}
+li a:hover{
+    color: red;
+}
+.btn{
+    color: black;
+    background-color: transparent;
+    border: 3px solid olive;
+    padding: 7px 20px;
+    border-radius: 10px;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    color: red;
+}
+body{
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url("premium_photo-1661301044600-8856088002c7.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.heading1{
+    position: absolute;
+    color: sandybrown;
+    left: 13vh;
+    top:35vh;
+}
+.heading2{
+    position: absolute;
+    color: white;
+    font-size: 10vh;
+    left: 13vh;
+    top: 40vh;
+}
+.heading3{
+    position: absolute;
+    color: white;
+    font-size: 10vh;
+    left: 13vh;
+    top: 49vh;
+}
+.btn1{
+    position: absolute;
+    left: 13vh;
+    padding: 10px 26px;
+    background-color: peru;
+    color: white;
+    top: 63vh;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: rgb(203, 68, 24);
+}
+.anchertag{
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    top: 64vh;
+    left: 40vh;
+    font-weight: bold;
+}
+.anchertag:hover{
+    color: rgb(203, 68, 24);
+}
+@media (max-width: 768px){
+    .list {
+        width: 100%;
+        height: 100vh; 
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4vh;
+        left: 100%;
+        transition: all 1s;
+    }
+    a:hover{
+        color: red;
+    }
+    #check {
+        display: none;
+    }
+    .checkBtn{
+        display: block;
+    }
+    #check:checked~ul{
+        left: 0%;
+    }
+    li a:hover{
+        color: red;
+    }
+    .heading1{
+        top: 25vh;
+        font-weight: 100px;
+        left: 5vh;
+    }
+    .heading2{
+        top: 30vh;
+        font-size:40px;
+        left: 5vh;
+    }
+    .heading3{
+        top: 38vh;
+        font-size: 40px;
+        left: 5vh;
+    }
+    .btn1{
+        top: 52vh;
+        left: 5vh;
+    }
+    .btn1:hover{
+        background-color: rgb(203, 68, 24);
+    }
+    .anchertag{
+        top: 53vh;
+        left: 28vh;
+    }
+}
