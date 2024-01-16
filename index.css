@@ -116,7 +116,7 @@ body{
 .anchertag:hover{
     color: rgb(203, 68, 24);
 }
-@media (max-width: 768px){
+@media (max-width: 420px){
     .list {
         width: 100%;
         height: 100vh; 
@@ -155,7 +155,7 @@ body{
         left: 5vh;
     }
     .heading3{
-        top: 38vh;
+        top: 44vh;
         font-size: 40px;
         left: 5vh;
     }
@@ -168,6 +168,6 @@ body{
     }
     .anchertag{
         top: 53vh;
-        left: 28vh;
+        left: 25vh;
     }
 }
